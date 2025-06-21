@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hai, Boleh Kenalan?</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe6f0, #d6f0ff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .bubble {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 340px;
+      animation: popin 1s ease-out;
+    }
+
+    .sticker {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 0.2rem 0;
+      color: #ff69b4;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background: #ff85c1;
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff5da2;
+    }
+
+    @keyframes popin {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bubble">
+    <div class="sticker">🐰💖✨</div>
+    <h1>Haiii~</h1>
+    <p>Boleh kenalan nggak? Aku orangnya nggak neko-neko kok 😁</p>
+    <a class="btn" href="https://wa.me/6283895588784">Yuk Chat 💌</a>
+  </div>
+</body>
+</html>
